@@ -31,8 +31,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- View my Solution on [Frontend Mentor](https://your-solution-url.com)
-- View the Live Site [here](https://your-live-site-url.com)
+- View my Solution on [Frontend Mentor](https://www.frontendmentor.io/solutions/qr-code-card-centered-vertically-and-horizontally-with-css-grid-qpmT4Ihbn)
+- View the Live Site [here](https://kxnzx.github.io/qr-code-component/)
 
 ## My process
 
