@@ -1,0 +1,112 @@
+/*** GOOGLE FONTS ***/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/*** VARIABLES ***/
+:root {
+  /*** colors ***/
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  /*** fonts ***/
+  /* font-family */
+  --ff-primary: "Outfit", sans-serif;
+  /* font-size */
+  --fs-15-px: 0.9375rem;
+  /* font-weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/*** RESET ***/
+html {
+  box-sizing: border-box;
+  height: 100vh;
+  min-width: 375px;
+  max-width: 1440px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/*** GLOBAL STYLES ***/
+body {
+  min-height: 100vh;
+  /* remove scrollbar */
+  overflow: hidden;
+  /* styles */
+  font-family: var(--ff-primary);
+  background-color: var(--light-gray);
+  /* center vertically & horizontally */
+  display: grid;
+  place-items: center;
+}
+
+footer {
+  text-align: center;
+  font-size: var(--fs-15-px);
+  /* keep footer on bottom of page */
+  position: fixed;
+  bottom: 0;
+}
+/*** SPECIFIC STYLES ***/
+.card {
+  background-color: var(--white);
+  height: 497px;
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+}
+
+.card:hover {
+  background-color: transparent;
+}
+
+.card:hover h2 {
+  color: var(--white);
+}
+
+.card:hover p {
+  color: var(--white);
+}
+
+.card__qr-code {
+  width: 288px;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.card__information {
+  text-align: center;
+}
+
+.card__title {
+  width: 300px;
+  margin: 0 auto 1rem;
+  color: var(--dark-blue);
+  font-weight: var(--fw-bold);
+}
+
+.card__text {
+  width: 246px;
+  margin: auto;
+  color: var(--grayish-blue);
+  font-size: var(--fs-15-px);
+  font-weight: var(--fw-regular);
+}
+
+.attribution {
+  color: var(--grayish-blue);
+}
+
+.attribution a {
+  color: #3685ff;
+}
