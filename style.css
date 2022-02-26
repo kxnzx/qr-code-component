@@ -38,14 +38,16 @@ html {
 /*** GLOBAL STYLES ***/
 body {
   min-height: 100vh;
-  /* remove scrollbar */
-  overflow: hidden;
   /* styles */
   font-family: var(--ff-primary);
   background-color: var(--light-gray);
   /* center vertically & horizontally */
   display: grid;
   place-items: center;
+}
+
+h1 {
+  font-size: 1.438rem;
 }
 
 footer {
@@ -58,8 +60,7 @@ footer {
 /*** SPECIFIC STYLES ***/
 .card {
   background-color: var(--white);
-  height: 497px;
-  width: 320px;
+  max-width: 20rem;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
@@ -79,7 +80,7 @@ footer {
 }
 
 .card__qr-code {
-  width: 288px;
+  width: 18rem;
   margin: 1rem;
   border-radius: 10px;
 }
@@ -88,16 +89,17 @@ footer {
   text-align: center;
 }
 
-.card__title {
-  width: 300px;
-  margin: 0 auto 1rem;
+.sr-only {
+  margin: 0 auto;
+  padding: 0 0.5rem 1rem;
   color: var(--dark-blue);
-  font-weight: var(--fw-bold);
+  width: 18.75rem;
 }
 
 .card__text {
-  width: 246px;
+  width: 15.375rem;
   margin: auto;
+  padding-bottom: 2.5rem;
   color: var(--grayish-blue);
   font-size: var(--fs-15-px);
   font-weight: var(--fw-regular);
